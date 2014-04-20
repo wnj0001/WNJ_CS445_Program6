@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012AD36219038CE400D90C10 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 012AD36119038CE400D90C10 /* main.c */; };
 		012AD36419038CE500D90C10 /* WNJ_Program6.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 012AD36319038CE500D90C10 /* WNJ_Program6.1 */; };
+		012AD36B19038CF600D90C10 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012AD36A19038CF600D90C10 /* OpenGL.framework */; };
+		012AD36D19038CFC00D90C10 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012AD36C19038CFC00D90C10 /* GLUT.framework */; };
+		012AD37019038D6600D90C10 /* blaster.c in Sources */ = {isa = PBXBuildFile; fileRef = 012AD36E19038D6600D90C10 /* blaster.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +28,11 @@
 
 /* Begin PBXFileReference section */
 		012AD35E19038CE400D90C10 /* WNJ_Program6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WNJ_Program6; sourceTree = BUILT_PRODUCTS_DIR; };
-		012AD36119038CE400D90C10 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		012AD36319038CE500D90C10 /* WNJ_Program6.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WNJ_Program6.1; sourceTree = "<group>"; };
+		012AD36A19038CF600D90C10 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		012AD36C19038CFC00D90C10 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		012AD36E19038D6600D90C10 /* blaster.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blaster.c; sourceTree = "<group>"; };
+		012AD36F19038D6600D90C10 /* my_setup_3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_setup_3D.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012AD36D19038CFC00D90C10 /* GLUT.framework in Frameworks */,
+				012AD36B19038CF600D90C10 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 		012AD35519038CE400D90C10 = {
 			isa = PBXGroup;
 			children = (
+				012AD36C19038CFC00D90C10 /* GLUT.framework */,
+				012AD36A19038CF600D90C10 /* OpenGL.framework */,
 				012AD36019038CE400D90C10 /* WNJ_Program6 */,
 				012AD35F19038CE400D90C10 /* Products */,
 			);
@@ -60,7 +69,8 @@
 		012AD36019038CE400D90C10 /* WNJ_Program6 */ = {
 			isa = PBXGroup;
 			children = (
-				012AD36119038CE400D90C10 /* main.c */,
+				012AD36E19038D6600D90C10 /* blaster.c */,
+				012AD36F19038D6600D90C10 /* my_setup_3D.h */,
 				012AD36319038CE500D90C10 /* WNJ_Program6.1 */,
 			);
 			path = WNJ_Program6;
@@ -117,7 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012AD36219038CE400D90C10 /* main.c in Sources */,
+				012AD37019038D6600D90C10 /* blaster.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
