@@ -165,6 +165,9 @@ int are_corners_visible;
 // Float values used to calculate movement rate for corners
 float corner_dist;
 
+// Float used to fix speed bug on linux systems
+float linux_bug_fix;
+
 
 
 // ------------------------------------
@@ -237,7 +240,7 @@ void spawn_enemy() {
 // the vertices of the side panel
 void update_enemy() {
     if(enemy->is_alive) {
-        enemy->center.y -= enemy_step_dist;
+        enemy->center.y -= enemy_step_dist / linux_bug_fix;
         if((enemy->center.y - (enemy->size / 2)) < (origin->y - (canvas_height / 2))) {
             is_game_over = 1;
         }
@@ -772,6 +775,8 @@ void init() {
 
     are_corners_visible = 0;
     corner_dist = 0;
+    
+    linux_bug_fix = 2;
 }
 
 
