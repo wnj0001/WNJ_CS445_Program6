@@ -398,6 +398,7 @@ void update_sides() {
 void check_distance() {
     if(sqrt((corner_dist * corner_dist) + (corner_dist + corner_dist)) >= 20) {
         are_corners_visible = 0;
+        corner_dist = 0;
     }
 }
 
